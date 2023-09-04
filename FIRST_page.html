@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- يبدأ المستند HTML -->
+<html>
+<!-- يحتوي على المعلومات الرأسية للصفحة -->
+<head>
+  <!-- يحدد عنوان الصفحة الذي يظهر في شريط عنوان المتصفح -->
+  <title>صفحة البداية</title>
+  <!-- يستخدم لتعريف قواعد الأنماط (CSS) للصفحة -->
+
+</head>
+<!-- يحتوي على محتوى الصفحة القابل للعرض -->
+<body>
+  <!-- يعرض عنوانًا رئيسيًا بحجم الرأس 1 -->
+  <h1>صفحة البداية</h1>
+  <p>click on photo  </p>
+ <a href="second _page.html"><img  src="IMG-20230721-WA0000.jpg" alt="" width="300"   /> </a> 
+ 
+ 
+  <!-- يحتوي على مجموعة من الروابط -->
+  <div>
+    <!-- ينشئ رابطًا إلى صفحة second.html ويفتحها في نافذة جديدة -->
+    <a href="second _page.html" target="_blank">blank </a>
+    <!-- ينشئ رابطًا إلى صفحة second.html ويفتحها في النافذة الأم -->
+  <a href="second _page.html" target="_parent">_parent</a>
+    <!-- ينشئ رابطًا إلى صفحة second.html ويفتحها في النافذة الأعلى -->
+    <a href="second _page.html" target="_top">top</a>
+    <!-- ينشئ رابطًا إلى صفحة second.html ويفتحها في إطار مُسمّى -->
+    <a href="second _page.html" target="framename">framename</a>
+  </div>
+  
+     <a href="second _page.html#12 " target="_blank">
+       قال الئ عنوان التعليم الآلي في الصفحه الاخرائ انقر هنا
+     </a>
+  
+  
+  
+  
+  <!-- يحتوي على كود جافاسكريبت -->
+  <script>
+    // يقوم بتعريف دالة createBookmark
+    function createBookmark() {
+      // ينشئ عنصر الرابط
+      var bookmarkLink = document.createElement("a");
+      // يعيّن عنوان الرابط
+      bookmarkLink.href = "second _page.html";
+      // يعيّن نص الرابط
+      bookmarkLink.innerHTML = "روابط مفضلة";
+      // يعيّن هامش اليسار للرابط
+      bookmarkLink.style.marginLeft = "10px";
+      // يضيف الرابط إلى الصفحة
+      document.body.appendChild(bookmarkLink);
+    }
+  </script>
+  <!-- زر لإنشاء رابط مفضلة عند النقر -->
+  <button onclick="createBookmark()">إنشاء رابط مفضلة</button>
+</body>
+</html>
